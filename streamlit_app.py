@@ -29,4 +29,4 @@ with tabs[2]:
 # Tab 4: Volume Chart
 with tabs[3]:
     st.subheader(f"Volume per Date Chart")
-    st.line_chart(df.set_index("Date")["Volume"])
+    st.line_chart(df.set_index("Date")["Close_x_Volume"])
