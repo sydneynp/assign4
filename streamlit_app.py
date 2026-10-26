@@ -9,7 +9,7 @@ st.title("Microsoft Stock Data Dashboard by Sydney Pitts")
 df = pd.read_csv("msft.csv")
 
 # Set up the 4 tabs on the Dashboard
-tabs = st.tabs(["📋 Raw Data", "📈 Price Chart", "📊 Volume Chart", "↗️ Price per Year Chart"])
+tabs = st.tabs(["📋 Raw Data", "📈 Price Chart", "📊 Volume Chart", "↗️ Price per Date Chart"])
 
 # Tab 1: Raw Data
 with tabs[0]:
@@ -28,5 +28,5 @@ with tabs[2]:
 
 # Tab 4: Volume Chart
 with tabs[3]:
-    st.subheader(f"Price per Year Chart")
+    st.subheader(f"Price per Date Chart")
     st.line_chart(df['Year'])
